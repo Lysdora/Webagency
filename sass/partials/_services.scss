@@ -1,0 +1,65 @@
+.services {
+    text-align: center;
+    background-color: $color-bg-section;
+
+    p {
+        font-weight: 400;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+}
+
+
+
+
+
+.media {
+    display: flex;
+
+    h3 {
+        text-align: left;
+    }
+    p {
+        text-align: left;
+    }
+    .media-left {
+        margin-left: 1em;
+        
+    /* Here style aboute icon rounded in section service */
+
+        .iconround {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 2em;
+            height: 2em;
+            border: 1px solid #E8E8E8;
+            border-radius: 100%;
+            font-size: 1.75em;
+            margin-top: 0.2em;
+        }
+        .iconround:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin: -5px 0 0 0;
+            border-radius: 100%;
+            background-color: $blue;
+            box-shadow: 0 0 0 4px white;
+            position: absolute;
+            top: 50%;
+            right: -5px;
+        }
+        .fa-line-chart,
+        .fa-cubes,
+        .fa-pie-chart {
+            color: $blue;
+
+        }
+        
+    }
+}
+
+
+

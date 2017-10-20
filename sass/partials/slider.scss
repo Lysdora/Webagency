@@ -1,0 +1,268 @@
+/*----------------------------------------------
+--Slider
+-----------------------------------------------  */
+
+.carousel {
+    margin: 0;
+    padding: 0;
+}
+
+/* style general slide 1 */
+
+.carousel-cell {
+    background-image: url(../../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    background-position: center;
+    display: flex;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .static-banner {
+        display: flex;
+        align-self: center;
+        color: #fff;
+        padding: 3em;
+
+
+        a {
+            color: #fff;
+            font-weight: 600;
+            background-color: $blue;
+            align-self: flex-start;
+            border-radius: 3px;
+        }
+
+        span {
+            color: $blue;
+        }
+
+    }
+}
+
+/* Style general slide 2 */
+
+.carousel-cell2 {
+    background-image: url(../../img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    background-position: center;
+    display: flex;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .static-banner {
+        display: flex;
+        align-self: center;
+        color: #fff;
+        padding: 3em;
+
+
+        a {
+            color: #fff;
+            font-weight: 600;
+            background-color: $blue;
+            align-self: flex-start;
+            border-radius: 3px;
+        }
+
+        span {
+            color: $blue;
+        }
+
+    }
+
+
+}
+
+
+/*----------------------------------------------
+--Slider Media Queries
+-----------------------------------------------  */
+
+@media (min-width: 320px) {
+    /* style slide 1 */
+    .carousel-cell {
+        background-image: url(../../img/mob.bg1.jpg);
+        background-size: auto;
+        background-position: center left;
+
+
+        .static-banner {
+            padding: 0.5em;
+            background: rgba(0, 0, 0, 0.1);
+            margin: 1em;
+        }
+
+
+        h1 {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1em;
+
+
+        }
+
+        p {
+            font-weight: 400;
+            margin-bottom: 1em;
+            font-size: 1.1em;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        a {
+            padding: 0.4em;
+        }
+
+
+    }
+
+    /* style slide 2 */
+    .carousel-cell2 {
+        background-image: url(../../img/mob.bg2.jpg);
+        background-size: auto;
+        background-position: right;
+
+        .static-banner {
+            padding: 0.5em;
+            background: rgba(0, 0, 0, 0.1);
+            margin: 1em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1em;
+        }
+
+        a {
+            padding: 0.4em;
+        }
+
+
+    }
+
+    .carousel {
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
+
+
+@media (min-width: 576px) {
+    /* style slide 1 */
+    .carousel-cell {
+        background-image: url(../../img/mob1.bg1.jpg);
+        background-size: auto;
+        height: 750px;
+        margin: 0;
+        padding: 0;
+
+        .static-banner {
+            padding: 0;
+            background: transparent;
+            margin: 3em;
+        }
+
+
+        h1 {
+            font-size: 2.1em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        a {
+            padding: 0.6em;
+            font-size: 1.1em;
+        }
+
+    }
+
+    /* style slide 2 */
+    .carousel-cell2 {
+        background-image: url(../../img/mob2.bg2.jpg);
+        background-size: auto;
+        height: 750px;
+        margin: 0;
+        padding: 0;
+
+        .static-banner {
+            padding: 0;
+            background: transparent;
+            margin: 3em;
+        }
+
+        h2 {
+            font-size: 2.1em;
+        }
+        a {
+            padding: 0.6em;
+            font-size: 1.1em;
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    /* style slide 1 */
+    .carousel-cell {
+        background-image: url(../../img/1124.bg1.jpg);
+        background-size: cover;
+
+        h1 {
+            font-size: 2.6em;
+        }
+        p {
+            font-size: 2em;
+            line-height: 1.1em;
+        }
+    }
+
+    /* style slide 2 */
+    .carousel-cell2 {
+        background-image: url(../../img/1124.bg2.jpg);
+        background-size: cover;
+
+        h2 {
+            font-size: 2.6em;
+        }
+
+    }
+}
+
+
+@media (min-width:1025px) {
+    /* style slide 1 */
+    .carousel-cell {
+        background-image: url(../../img/bg1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* style slide 2 */
+    .carousel-cell2 {
+        background-image: url(../../img/bg2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
